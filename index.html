@@ -1,28 +1,76 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
     <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>LeadReacherAI</title>
+        <meta name="description" content="LeadReacherAI - stop letting leads go cold"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="X-UA-Compatible", content="ie=edge"/>
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <title>LeadReacherAI</title>
+        <style>
+            body{
+                color: #333;
+                background-color: #fdfdfe;
+                font-size: 18px;
+                font: 1.2rem/1.5 Century Gothic, sans-serif;
+                max-width: 600px;
+                max-width: 55ch;
+                margin: 0 auto;
+                padding: 2.5rem 1.75rem;
+            }
+            
+            header{
+                outline: 2px solid #ddd;
+                outline-offset: 1rem;
+            }
+
+            h1,h2,h3{
+                line-height: 1.2;
+                font-family: Aria, serif;
+            }
+
+            h1{
+                font-size: 2.45 rem;
+            }
+
+            a:focus{
+                outline: 0.2 rem solid #123;
+                outline-offset: 0.4rem;
+            }
+
+            p{
+                margin-bottom: 2 rem;
+            }
+
+            section{
+                margin: 2.5rem auto;
+            }
+
+            @media (prefers-color-scheme: dark){
+                body{color:#ddd;background:#123}
+                a:focus{
+                    outline: 0.2rem solid #fed;
+                }
+                a{color:#5bf;}
+            }
+        </style>
     </head>
     <body>
-        <div class="flex flex-col min-h-screen items-center justify-center gap-4">
-            <h1 class="text-4xl pb-4">Insurance Agents</h1>
-            <h2 class="text-2xl">Stop letting leads go cold</h2>
-            <h3 class="text-xl text-center">Contact them the moment they hit your funnel</h3>
-            <h3 class="text-xl pt-4">Starting at $50/month</h3>
-            <p class="text-lg text-center pt-6 px-4">
-                Interested? I'd love to talk to you! <br>
-                Use the link below to schedule a time for us to chat. <br>
-                In exchange for an hour of your time, I'll pay you $50 and give you three months free once the product is out. <br>
-                Thank you so much! I really look forward to talking with you! <br>
-                - Sam, Founder of LeadReacherAI
-            </p>
-            <a href=https://calendly.com/spotter1642/30min class="text-lg text-blue-500 underline">Schedule a chat</a>
-        </div>
+        <header>
+            <h1>Insurance Agents</h1>
+            <h2>Stop letting leads go cold</h2>
+            <h3>Contact them the moment they hit your funnel</h3>
+            <h3>Starting at $50/month</h3>
+        </header>
+        <main>
+            <section>
+                <h2>Interested? I'd love to talk to you!</h2>
+                <p>Use the link below to schedule a time for us to chat</p>
+                <p>In exchange for an hour of your time, I'll pay you $50 and give you three months free once the product is out.</p>
+                <p>Thank you so much! I really look forward to talking with you!<p>
+                <p>- Sam, Founder of LeadReacherAI</p>
+                <a href=https://calendly.com/spotter1642/30min>Schedule a chat</a>
+            </section>
+        </main>
     </body>
 </html>
