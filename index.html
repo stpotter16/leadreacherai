@@ -10,6 +10,24 @@
 
 	  gtag('config', 'AW-17701607168');
 	</script>
+	<!-- Event snippet for Page view conversion page
+	In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+	<script>
+	function gtag_report_conversion(url) {
+	  var callback = function () {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  };
+	  gtag('event', 'conversion', {
+	      'send_to': 'AW-17701607168/AqtPCLiZicMbEICu5PhB',
+	      'value': 1.0,
+	      'currency': 'USD',
+	      'event_callback': callback
+	  });
+	  return false;
+	}
+	</script>
         <meta charset="utf-8"/>
         <title>LeadReacherAI</title>
         <meta name="description" content="LeadReacherAI - stop letting leads go cold"/>
@@ -78,7 +96,7 @@
                 <p>In exchange for an hour of your time, I'll pay you $50 and give you three months free once the product is out.</p>
                 <p>Thank you so much! I really look forward to talking with you!<p>
                 <p>- Sam, Founder of LeadReacherAI</p>
-                <a href=https://calendly.com/spotter1642/30min>Schedule a chat</a>
+                <a href=https://calendly.com/spotter1642/30min onclick=gtag_report_conversion>Schedule a chat</a>
             </section>
         </main>
     </body>
